@@ -1,5 +1,66 @@
-#body h1 {
-  color:blue;
+body{
+
+    
+  /*Not my code:https://medium.com/@mignunez/html-css-how-to-split-a-background-into-2-colors-1cdc394deb3d*/
+  background: linear-gradient(
+  to right,
+  rgb(75, 74, 74) 0%,
+  rgb(161, 160, 160) 50%,
+  white 50%,
+  white 100%
+  );
+  margin: 20%;
+  
+
+  
+ }
+ h1{
+  color:white;
+  border: 5px ridge white;
+  text-decoration: underline rgb(70, 69, 69);
+  padding: 70px 35px;
+  text-align: center;
+  float:left;
+
+  margin:20px;
+  font-size: 70px;
+  font-weight: normal;
+
+ }
+ 
+ ul{
+  border: 1px solid;
+  float:left;
+
+  padding: 30px;
+  margin:20px;
+
+  list-style-type: upper-roman;
+  font-size: 20px;
+  
+ }
+
+ li a {
+  font-size:30px;
+  font-weight: normal;
+  text-decoration: none;
+  
+ }
+ li a:link {
+  color:black;
+ }
+ li a:hover {
+  color:white;
+ }
+ 
+ li{
+  border: 5px ridge;
+  background-color: rgb(219, 215, 215);
+  margin: 10px;
+  padding:5px
+ }
+ li:hover{
+  background-color: rgba(109, 109, 109, 0.986);
+ }
 
 
-}
