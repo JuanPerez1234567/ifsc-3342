@@ -26,40 +26,51 @@ html {
   /* End of "Micro clearfix" */
   
   /*
-  background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/7248/grid-1.png");*/
+  background-image: url("../img/gridb.png");*/
 
 main {
-    width: 956px;
-    margin: 20px auto;
+    /*width: 956px;*/
+    width: 80vw;
+    margin: 20px;
     border:1px solid red;
-    background-image: url("../img/gridb.png");
+    
+    
     background-color: yellow;
 
     color:yellow
   }
   
   header.primary, footer.primary {
-    width: 916px;
-    margin: 20px;
+    /*width: 916px;*/
+    width:95.82%;
+    /*margin:20px;*/
+    margin: 2.1%;
     background-color: black;
     float: left;
-    padding: 20px;
+    /*padding: 20px;*/
+    padding: 2.2%;
   }
   
   #blog {
-    width: 448px;
+    /*width: 448px; */
+    width: 46.86%;
     background-color: black;
     float: left;
-    margin-left: 20px;
-    padding: 20px;
+    /*margin-left: 20px;*/
+    margin-left: 2.1%;
+    /*padding: 20px;*/
+    padding: 4.46%;
   }
   
   aside {
-    width: 292px;
+    /*width: 292px;*/
+    width: 30.54%;
     float: left;
     background-color: black;
-    margin-left: 98px;
+    /*margin-left: 98px;*/
+    margin-left: 10.25%;
     
-    padding: 20px;
+    /*padding: 20px;*/
+    padding: 6.85%;
   }
   
