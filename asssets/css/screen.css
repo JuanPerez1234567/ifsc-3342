@@ -9,7 +9,7 @@ body{
   white 50%,
   white 100%
   );
-  margin: 20%;
+  
   
 
   
@@ -17,6 +17,16 @@ body{
 
  div{
   border: 1px solid rgb(0, 89, 255);
+  
+  /*960*/
+  width:80vw;
+  margin:auto;
+  margin-top: 20%;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10%;
+  
+
  }
  h1{
   color:white;
@@ -24,30 +34,52 @@ body{
   text-decoration: underline rgb(70, 69, 69);
   
   text-align: center;
-  float:left;
-  
-  padding: 70px 35px;
-  margin:3vw;
-
   font-size: 70px;
   font-weight: normal;
+
+  /*
+  width:43.75%;
+  margin-left: 2.08%;
+  padding:1%;
+  */
+  padding:10%;
+  
 
  }
  
  ul{
-  border: 1px solid;
-  float:left;
-
-  padding: 30px;
-  margin:3vw;
+  
+  
 
   list-style-type: upper-roman;
   font-size: 20px;
+
+  /*
+  width:43.75%;
+  margin-left: 2.08%;
+  padding:2%;
+  */
+  padding:5%;
+
+  display: grid;
   
+ }
+ li{
+  border: 5px ridge;
+  background-color: rgb(219, 215, 215);
+
+  
+  width:85%;
+  padding:2%;
+  margin:10px;
+  
+ }
+ li:hover{
+  background-color: rgba(109, 109, 109, 0.986);
  }
 
  li a {
-  font-size:30px;
+  font-size:25px;
   font-weight: normal;
   text-decoration: none;
   
@@ -59,15 +91,6 @@ body{
   color:white;
  }
  
- li{
-  border: 5px ridge;
-  background-color: rgb(219, 215, 215);
-  margin: 10px;
-  padding:5px
- }
- li:hover{
-  background-color: rgba(109, 109, 109, 0.986);
- }
 
  .clearfix::after {
   content: "";
