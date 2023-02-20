@@ -21,7 +21,7 @@ body{
   /*960*/
   width:80vw;
   margin:auto;
-  margin-top: 20%;
+  margin-top: 10%;
   display: grid;
   grid-template-columns: auto auto;
   gap: 10%;
@@ -98,3 +98,48 @@ body{
   display: table;
 }
 
+
+@media screen and (max-width:600px) {
+  div {
+    grid-template-columns: auto;
+    
+  }
+  h1{
+    color:black;
+    margin-bottom: auto;
+  }
+  
+  
+}
+
+@media screen and (min-width:911px){
+  div {
+    grid-template-columns: auto;
+    max-height: auto;
+  }
+
+  h1 {
+    padding: 5%;
+    height:30%;
+    font-size:150px;
+
+    background-color:dimgrey;
+
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns:auto auto;
+  }
+  li {
+    max-width: 40%;
+  }
+
+}
+
+@media screen and (max-height:800px) {
+  div{
+    background-color: black;
+  }
+
+}
