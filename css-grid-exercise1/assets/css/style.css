@@ -30,47 +30,56 @@ html {
 
 main {
     /*width: 956px;*/
-    width: vw;
-    margin: 20px;
+    width:95vw;
+    margin:20px;
+    /*grid*/
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap:20px;
+    padding:0 20px;
+
+
+
+    
     border:1px solid red;
     
     
     background-color: yellow;
+    /*background-image: url("../img/gridb.png");*/
 
     color:yellow
+
+
   }
   
   header.primary, footer.primary {
-    /*width: 916px;*/
-    width:95.82%;
-    /*margin:20px;*/
-    margin: 2.1%;
     background-color: black;
-    float: left;
-    /*padding: 20px;*/
-    padding: 2.2%;
+    grid-column:1 / span 12;
+    padding: 20px;
+  }
+
+  #content{
+    
+    grid-column:1 / span 12;
+  
+
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap:20px;
+
+
   }
   
   #blog {
-    /*width: 448px; */
-    width: 46.86%;
     background-color: black;
-    float: left;
-    /*margin-left: 20px;*/
-    margin-left: 2.1%;
-    /*padding: 20px;*/
-    padding: 4.46%;
+    grid-column:1 / span 5;
+    padding:20px;
+
   }
   
   aside {
-    /*width: 292px;*/
-    width: 30.54%;
-    float: left;
     background-color: black;
-    /*margin-left: 98px;*/
-    margin-left: 10.25%;
-    
-    /*padding: 20px;*/
-    padding: 6.85%;
+    grid-column:8 / span 5;
+    padding:20px;
   }
   
