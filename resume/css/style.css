@@ -261,3 +261,80 @@ img {
   height:auto;
 }
 
+
+
+
+body{
+  max-width: 500px;
+  background-color: #EBCFB2;
+  color:#424B54;
+}
+
+header,main, footer{
+  margin:10px 20px
+}
+
+nav{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:20px;
+  
+  
+}
+
+nav a{
+  
+  text-align: center;
+  text-decoration: overline;
+  font-size: 20px;
+  padding: 10px;
+}
+
+
+a{
+  color:black;
+}
+a:visited{
+  color: black;
+}
+a:hover{
+  color:white;
+}
+
+h1{
+  text-align: center;
+  color: black;
+  text-decoration: white underline 5px;
+}
+img{
+  border:5px solid black
+}
+#about p{
+  background-color: white;
+  border:1px solid black;
+  margin:20px;
+}
+#about dl{
+  border-top:2px solid black;
+  border-bottom: 1px solid black;
+  padding:10px;
+}
+#about dt{
+  display: grid;
+  grid-template-columns: 1fr;
+  text-decoration: underline;
+}
+#about ul{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+section h2{
+  color:black;
+  background-color: #C5BAAF;
+
+}
+
+
+
+
+
