@@ -1,0 +1,19 @@
+body{
+    max-width: 80vw;
+    margin:0 20%;
+    background-color: burlywood;
+
+}
+h1{
+    text-align: center;
+    border: 5px solid black;
+
+}
+dt{
+    font-size: 40px;
+    border-bottom: 2px solid black;
+}
+img{
+    max-width: 60%;
+    margin:10px;
+}
