@@ -266,12 +266,14 @@ img {
 
 body{
   max-width: 500px;
-  background-color: #EBCFB2;
+  margin:20px;
   color:#424B54;
 }
 
 header,main, footer{
-  margin:10px 20px
+  margin:20px;
+  padding:10px;
+  background-color: #EBCFB2;
 }
 
 nav{
@@ -310,6 +312,7 @@ h1{
 img{
   border:5px solid black;
   margin:20px;
+  max-width:90%;
 }
 #about p{
   background-color: white;
@@ -334,8 +337,83 @@ img{
 section h2{
   color:black;
   background-color: #C5BAAF;
+  padding: 5px;
   
 
+}
+
+
+@media screen and (min-width:768px){
+  body{
+    max-width:900px;
+    
+    
+  }
+  main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "about about"
+    "skills experience"
+    "education experience"
+    ;
+    gap:1em;
+  } 
+  #about{ 
+    grid-area: about; 
+
+    display: grid; 
+    grid-template-columns:1fr 1fr;
+    grid-template-areas: 
+    "h1 img"
+    "p p"
+    "h2 links"
+    "dl links"
+    ;
+    gap:10px;
+
+
+  } 
+  #about h1{
+    grid-area: h1;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+  }
+  #about img{
+    grid-area: img;
+    max-width: 80%;
+  }
+  #about p{
+    grid-area: p;
+  }
+  #about h2{
+    grid-area: h2;
+  }
+  #about dl{
+    grid-area: dl;
+  }
+  #about #links{
+
+    grid-area: links;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+  }
+  #links h3{
+    text-align: center;
+  }
+
+  #skills{
+    grid-area: skills; 
+  } 
+  #experience{
+    grid-area:experience; 
+  } 
+  #education{ 
+    grid-area:education; 
+  }
 }
 
 
