@@ -400,6 +400,8 @@ section h2{
     flex-direction: column;
     align-self: center;
 
+    border:2px solid white;
+
   }
   #links h3{
     text-align: center;
