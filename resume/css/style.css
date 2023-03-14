@@ -258,7 +258,7 @@ html {
 
 img {
   max-width:100%;
-  height:auto;
+  max-height:100%;
 }
 
 
@@ -282,13 +282,14 @@ nav{
   gap:20px;
   
   
+  
 }
 
 nav a{
   
   text-align: center;
   text-decoration: overline;
-  font-size: 20px;
+  font-size: 15px;
   padding: 10px;
 }
 
@@ -359,6 +360,10 @@ section h2{
     ;
     gap:1em;
   } 
+  nav a{
+    font-size: 20px;
+
+  }
   #about{ 
     grid-area: about; 
 
