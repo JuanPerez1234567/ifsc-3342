@@ -422,6 +422,119 @@ section h2{
     grid-area:education; 
   }
 }
+@media screen and (min-width:1000px){
+  body{
+    max-width:1700px;
+    
+    
+  }
+  main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "about about about"
+    "skills education experience"
+
+    ;
+    gap:1em;
+  } 
+  nav a{
+    font-size:x-large;
+  }
+  #about{ 
+    grid-area: about; 
+
+    display: grid; 
+    grid-template-columns:1fr 30%;
+    grid-template-areas: 
+    "h1 img"
+    "p img"
+    "h2 links"
+    "dl links"
+    ;
+    gap:10px;
+
+
+  } 
+  #about h1{
+    font-size: 100px;
+    text-shadow: 2px 4px 4px rgba(255, 255, 255, 0.6)
+  
+  
+  }
+
+  
+  #about p{
+    grid-area: p;
+    font-size:large;
+    max-height: 50%;
+    
+
+  }
+  #about img{
+    
+    max-width: 70%;
+    max-height: 100%;
+    display: flex;
+    justify-self: center;
+  }
+  #about dl{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas: 
+    "labelName labelDOB labelNati labelLocation labelTel labelEmail labelAddress "
+    "name       dob       nati       location      tel      email      address"
+    ;
+  }
+  #about dl #labelName{
+    grid-area: labelName;
+  }
+  #about dl #name{
+    grid-area: name;
+  }
+
+  #about dl #labelDOB{
+    grid-area: labelDOB;
+  }
+  #about dl #dob{
+    grid-area: dob;
+  }
+  #about dl #labelNati{
+    grid-area: labelNati;
+  }
+  #about dl #nati{
+    grid-area: nati;
+  }
+  #about dl #labelLocation{
+    grid-area: labelLocation;
+  }
+  #about dl #location{
+    grid-area: location;
+  }
+  #about dl #labelTel{
+    grid-area: labelTel;
+  }
+  #about dl #tel{
+    grid-area: tel;
+  }
+  #about dl #labelEmail{
+    grid-area: labelEmail;
+  }
+  #about dl #email{
+    grid-area: email;
+  }
+  #about dl #labelAddress{
+    grid-area: labelAddress;
+  }
+  #about dl #address{
+    grid-area: address;
+  }
+  
+
+
+
+
+}
 
 
 
