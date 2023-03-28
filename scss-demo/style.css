@@ -1,0 +1,15 @@
+section {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-gap: 100px;
+}
+section article h2 {
+  text-decoration: underline;
+  color: #800020;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 10px;
+}
+section article p {
+  margin: 10px;
+}/*# sourceMappingURL=style.css.map */

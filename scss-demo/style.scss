@@ -1,0 +1,29 @@
+
+@mixin headingStyle(){
+    text-decoration: underline;
+    color: #800020;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+$border: solid, 1px;
+$bigMargin:100px;
+$smallMargin:10px;
+
+section{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-gap:$bigMargin;
+
+    article{
+        h2{
+            @include headingStyle();
+            margin:$smallMargin
+        }
+        p{
+            margin: $smallMargin;
+        }
+        
+    }
+
+}
