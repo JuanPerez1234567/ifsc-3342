@@ -1,5 +1,5 @@
 body {
-  background-color: blue;
+  background-color: rgba(48, 48, 250, 0.871);
 }
 
 nav .img-fluid {
@@ -12,7 +12,8 @@ nav .img-fluid {
   background-size: cover;
   background-attachment: fixed; /* Assures image stays in place */
   background-position: 50% 75%; /* Controls your image position */
-  height: 450px;
+  height: 400px;
+  margin: 0 15px;
   display: flex;
   align-items: flex-end;
 }
@@ -22,56 +23,96 @@ nav .img-fluid {
   margin-bottom: 20px;
 }
 
+.col-lg-6 {
+  color: white;
+}
+
 section {
   max-width: 90%;
   margin: auto;
   padding: 10px;
   background-color: white;
-  display: grid;
+  /*
+  display:grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "aboutUs aboutUs" "services serviceArea" "contactUs contactUs";
-}
-section h2 {
-  color: red;
-}
-section #aboutUs {
-  max-width: 70%;
-  margin: auto;
-  grid-area: aboutUs;
-  display: grid;
-  grid-template-columns: 80% 1fr;
-  grid-template-areas: "h2 h3" "p img";
-}
-section #aboutUs h2 {
-  grid-area: h2;
-}
-section #aboutUs h3 {
-  grid-area: h3;
-  margin: auto;
-}
-section #aboutUs p {
-  grid-area: p;
-}
-section #aboutUs img {
-  grid-area: img;
-  margin: auto;
+  grid-template-areas:
+  "aboutUs aboutUs"
+  "services serviceArea"
+  "contactUs contactUs";
+  h2{
+      color: red;
+  }
+  #aboutUs{
+      max-width: 70%;
+      margin: auto;
+      grid-area:aboutUs;
+      display: grid;
+      grid-template-columns: 80% 1fr;
+      grid-template-areas: 
+      "h2 h3"
+      "p img";
+      h2{
+          grid-area:h2;
+
+      }
+      h3{
+          grid-area:h3;
+          margin:auto;
+
+      }
+      p{
+          grid-area:p;
+
+      }
+      img{
+          grid-area:img;
+          margin:auto;
+
+      }
+  }
+
+  #services{
+      grid-area:services;
+
+      #carouselExampleCaptions{
+          background-color: grey;
+          max-width: 90%;
+          margin: auto;
+      } 
+      #carouselExampleCaptions img{
+          margin:auto;
+          height: 500px;
+          max-width: 500px;
+      }
+
+  }
+  #serviceArea{
+      grid-area:serviceArea;
+
+  }
+  #contactUs{
+      grid-area:contactUs;
+
+  }
+  */
 }
 section #services {
   grid-area: services;
 }
 section #services #carouselExampleCaptions {
   background-color: grey;
-  max-width: 90%;
+  max-width: 100%;
   margin: auto;
 }
 section #services #carouselExampleCaptions img {
   margin: auto;
   height: 500px;
-  max-width: 500px;
 }
-section #serviceArea {
-  grid-area: serviceArea;
+
+#footer {
+  max-width: 100%;
+  background-color: rgb(70, 70, 70);
 }
-section #contactUs {
-  grid-area: contactUs;
+#footer a:visted {
+  color: white;
 }/*# sourceMappingURL=style.css.map */

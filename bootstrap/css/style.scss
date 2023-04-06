@@ -1,6 +1,6 @@
 
 body{
-    background-color: blue;
+    background-color: rgba(48, 48, 250, 0.871);
 }
 nav .img-fluid{
     max-width: 20%;
@@ -8,12 +8,14 @@ nav .img-fluid{
 
 }
 
+
 #main-picture{
     background-image: url("../img/concrete-contractors-in-construction\ 1.png");
     background-size: cover;
     background-attachment: fixed; /* Assures image stays in place */
     background-position: 50% 75%; /* Controls your image position */
-    height: 450px;
+    height: 400px;
+    margin:0 15px;
     display: flex;
     align-items: flex-end;
 
@@ -24,12 +26,34 @@ nav .img-fluid{
     margin-bottom: 20px;
 
 }
+.col-lg-6 {
+    color:white;
+    
+}
 
 section{
     max-width: 90%;
     margin:auto;
     padding:10px;
     background-color: white;
+
+    #services{
+        grid-area:services;
+        
+        #carouselExampleCaptions{
+            background-color: grey;
+            max-width: 100%;
+            margin: auto;
+        } 
+        #carouselExampleCaptions img{
+            margin:auto;
+            height: 500px;
+            
+        }
+    
+    }
+
+    /*
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -54,7 +78,7 @@ section{
         }
         h3{
             grid-area:h3;
-            margin: auto;
+            margin:auto;
 
         }
         p{
@@ -91,8 +115,15 @@ section{
         grid-area:contactUs;
     
     }
-
+    */
     
+}
+#footer{
+    max-width: 100%;
+    background-color:rgb(70, 70, 70);
+    a:visted{
+        color:white;
+    }    
 }
 
 
