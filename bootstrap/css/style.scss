@@ -1,11 +1,100 @@
 
+body{
+    background-color: blue;
+}
 nav .img-fluid{
     max-width: 20%;
-    max-height: 1%;
+    max-height: 50%;
+
 }
 
-.img-fluid{
- 
-    width: 100%;
-    max-height: 8%;
+#main-picture{
+    background-image: url("../img/concrete-contractors-in-construction\ 1.png");
+    background-size: cover;
+    background-attachment: fixed; /* Assures image stays in place */
+    background-position: 50% 75%; /* Controls your image position */
+    height: 450px;
+    display: flex;
+    align-items: flex-end;
+
 }
+
+#main-picture #logo{
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+
+section{
+    max-width: 90%;
+    margin:auto;
+    padding:10px;
+    background-color: white;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "aboutUs aboutUs"
+    "services serviceArea"
+    "contactUs contactUs";
+    h2{
+        color: red;
+    }
+    #aboutUs{
+        max-width: 70%;
+        margin: auto;
+        grid-area:aboutUs;
+        display: grid;
+        grid-template-columns: 80% 1fr;
+        grid-template-areas: 
+        "h2 h3"
+        "p img";
+        h2{
+            grid-area:h2;
+
+        }
+        h3{
+            grid-area:h3;
+            margin: auto;
+
+        }
+        p{
+            grid-area:p;
+
+        }
+        img{
+            grid-area:img;
+            margin:auto;
+
+        }
+    }
+    
+    #services{
+        grid-area:services;
+        
+        #carouselExampleCaptions{
+            background-color: grey;
+            max-width: 90%;
+            margin: auto;
+        } 
+        #carouselExampleCaptions img{
+            margin:auto;
+            height: 500px;
+            max-width: 500px;
+        }
+    
+    }
+    #serviceArea{
+        grid-area:serviceArea;
+    
+    }
+    #contactUs{
+        grid-area:contactUs;
+    
+    }
+
+    
+}
+
+
+
+
