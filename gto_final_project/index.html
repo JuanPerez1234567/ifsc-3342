@@ -25,24 +25,186 @@
 
 <body >
 
-  <nav>
+  <nav class="primary-nav">
 
-    <button>GET ESTIMATE</button>
+    <button class="estimate-button">GET ESTIMATE</button>
     <ul >
       <li >
         <a href="#">About us</a>
       </li>
       <li >
         <a  href="#">Services</a>
+        <ul>
+          <li>Foundations</li>
+          <li>Driveways</li>
+          <li>Footings</li>
+        </ul>
       </li>
       <li >
         <a href="#">Sevice area</a>
       </li>
       <li >
         <a href="#">Contact us</a>
+        <ul>
+          <li>Call Us:(501)240-2490</li>
+          <li>Email:centenopjuan@gmail.com</li>
+        </ul>
       </li>
+      <li class="toggle"><a href="#"><i class="fas fa-bars"><img src="img/hamburger.png"></i></a></li>
     </ul>
   </nav>
+  <div id="main-picture">
+    <img id="logo" src="img/image2vector.svg">
+  </div>
+  <section class="jumbotron">
+    <h1>GET A FREE ESTIMATE TODAY</h1>
+    <ul>
+      <li>Need a new driveway?</li>
+      <li>Need to lay a foundation for your new project?</li>
+      <li>Need to revamp your sidewalk?</li>
+      <li><p>No matter how big or small the project is we got you covered. Set up an appointment and get a FREE estmate today</p></li>
+    </ul>
+    <button class="estimate-button">GET ESTIMATE</button>
+    <img src="img/IMG_0808.jpg">
+  </section>
+
+
+  <section class="about-us">
+    <p>Over the last 10 years, GTO Concrete has been building and perfecting its concrete craft. We have become a reliable contact for multiple contracting companies since we have managed to prove ourselves over and over again. GTO Concrete now has numerous employees and all the equipment and machinery to its name. <q>Starting from nothing, I have managed to build this company to what it is today. Further proving that Mexicans will get it done!</q></p>
+    <img src="img/aboutus.jpg">
+
+  </section>
+
+  <section class="services">
+      <!-- Tab links -->
+    <div class="tab">
+      <button class="tablinks" onclick="openService(event, 'Foundations')">Foundations</button>
+      <button class="tablinks" onclick="openService(event, 'Driveways')">Driveways</button>
+      <button class="tablinks" onclick="openService(event, 'Footings')">Footings</button>
+      
+    </div>
+
+      <!-- Tab content -->
+    <div id="Foundations" class="tabcontent">
+      <h3>Foundations</h3>
+      
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="img/foundation.1.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="img/foundation.2.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="img/foundation.3.jpg" style="width:100%">
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+
+    <div id="Driveways" class="tabcontent">
+      <h3>Driveways</h3>
+      <p>Paris is the capital of France.</p>
+      <!-- Full-width images with number and caption text -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="img/driveway.1.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="img/driveway.2.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="img/driveway.3.jpg" style="width:100%">
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+    </div>
+
+    <div id="Footings" class="tabcontent">
+      <h3>Footings</h3>
+      <p>Tokyo is the capital of Japan.</p>
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="img/walls.1.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="img/walls.2.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="img/walls.3.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="img/walls.4.jpg" style="width:100%">
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+    
+
+  </section>
+
+
+
+
+  <section class="service-area">
+    <h1>Service Area</h1>
+    <img  src="img/pngfind.com-arkansas-outline-png-5578095.png">
+    <p>GTO Concrete LLC was founded and is currently located in Little Rock, Arkansas. We have done many projects reaching to all four corners of the state. Set up  your appointment to see if your location is available.</p>
+  </section>
+
+  <section class="contact-us">
+    <h1>Contact Us</h1>
+    <p>We are always ready and willing to work with you. Give us a call/email and see how we can be of service to you!</p>
+    <h2>Contact Information</h2>
+    <dl>
+      <dt>Phone Number</dt>
+      <dd>(501)240-2490</dd>
+      <dt>Email Address</dt>
+      <dd>centenopjuan@gmail.com</dd>
+      <dt>Fax Number</dt>
+      <dd>(501)847-2326</dd>
+    </dl>
+  </section>
+
+
+  <footer>
+    <ul>
+      <li><img src="img/blackLogo.png"></li>
+      <li>
+        <ul>
+          <li><a  href="#">Back to top</a></li>
+          <li><a  href="#">About us</a></li>
+          <li><a  href="#">Services</a></li>
+          <li><a  href="#">Service Area</a></li>
+          <li><a  href="#">Contact Us</a></li>
+        </ul>
+      </li>
+    </ul>
+
+  </footer>
+
 
 
 

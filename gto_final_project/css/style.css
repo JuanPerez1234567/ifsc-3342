@@ -1,8 +1,10 @@
 nav {
   margin: 10px;
-  display: flex;
+  background: blue;
 }
 nav ul {
-  display: flex;
   gap: 2em;
+}
+nav ul li {
+  margin: 10px;
 }/*# sourceMappingURL=style.css.map */
