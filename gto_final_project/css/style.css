@@ -23,6 +23,7 @@ ul {
 nav {
   background: white;
   position: fixed;
+  z-index: 1;
   top: 0;
   width: 100%;
 }
@@ -86,7 +87,7 @@ nav .primary-nav .nav-item .submenu li {
   height: 400px;
   background-image: url("../img/foundation.3.jpg");
   background-size: cover;
-  background-position: 0% 50%; /* Controls your image position */
+  background-position: 0% 20%; /* Controls your image position */
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -94,6 +95,10 @@ nav .primary-nav .nav-item .submenu li {
 #main-picture img {
   width: 50%;
   box-shadow: 6px 5px black;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  z-index: 0;
 }
 
 .primary-nav.active .nav-item {
