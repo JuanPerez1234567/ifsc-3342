@@ -11,7 +11,7 @@ nav .img-fluid {
   background-image: url("../img/concrete-contractors-in-construction 1.png");
   background-size: cover;
   background-attachment: fixed; /* Assures image stays in place */
-  background-position: 50% 75%; /* Controls your image position */
+  background-position: 100% 90%; /* Controls your image position */
   height: 400px;
   margin: 0 15px;
   display: flex;

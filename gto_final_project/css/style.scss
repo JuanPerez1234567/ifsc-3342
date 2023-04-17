@@ -1,22 +1,131 @@
 
 
+
+body{
+    background-color: rgba(48, 48, 250, 0.871);
+    font-family: 'Oswald', sans-serif;
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+.estimate-button{
+    order:0;
+    margin: 10px;
+    padding: 10px;
+    font-size:25px;
+    font-weight: bold;
+    color: white;
+    background: red;
+    box-shadow: 5px 4px  black;
+
+}
 nav{
-    margin:10px;
-    background:blue;
-    
-    
-    
-    
+    background:white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    .primary-nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        
 
-    ul{
-    
-        gap:2em;
+        a{
+            color:black;
+            text-decoration: none;
 
-        li{
-            margin:10px;
         }
+
+    
+        .estimate-button{
+            order:0;
+            margin: 10px;
+            padding: 10px;
+            font-size:25px;
+            font-weight: bold;
+            color: white;
+            background: red;
+            box-shadow: 5px 4px  black;
+
+        }
+        .toggle .material-symbols-outlined{
+
+            order:1;
+            font-size: 40px;
+            margin: 10px;
+
+        }
+
+        .nav-item{
+            order:2;
+            margin:10px;
+            padding:10px;
+            width:100%;
+            text-align: center;
+            border-top: 1px black solid;
+            display: none;
+                      
+            .material-symbols-outlined{
+                font-size: 15px;
+            }
+            a{
+            
+                text-decoration: none;
+            }
+            .submenu{
+                display: flex;
+                flex-wrap: wrap;
+                list-style-type: none;
+                display: none;
+                
+                li {
+                    display: block;
+                    margin: 10px;
+                    padding: 10px;
+                    width:100%;
+                    text-align: center;
+                }
+            }
+            
+        }
+        
+        
+        
     }
 }
+
+#main-picture{
+    width:90%;
+    margin: auto;
+    height: 400px;
+    background-image: url("../img/foundation.3.jpg");
+    background-size: cover;
+    
+    background-position: 0% 50%;/* Controls your image position */
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    img{
+        width: 50%;
+        box-shadow: 6px 5px  black;
+    
+    }
+
+}
+.primary-nav.active .nav-item{
+    display: block;
+  }
+  .primary-nav.active .nav-item.submenu-active .submenu{
+    display:block;
+}
+
+
+
 
 @media screen and (min-width:1000px){
 }

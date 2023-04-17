@@ -2,6 +2,7 @@
 <html class="no-js" lang="en">
 
 <head>
+
   <meta charset="utf-8">
   <title>Boileplate template</title>
   <meta name="description" content="">
@@ -21,38 +22,50 @@
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+
+  
+
+
+
+  
 </head>
 
 <body >
 
-  <nav class="primary-nav">
+  <nav>
 
-    <button class="estimate-button">GET ESTIMATE</button>
-    <ul >
-      <li >
+    <ul class="primary-nav">
+      <li><button class="estimate-button">GET ESTIMATE</button></li>
+      <li class="nav-item">
         <a href="#">About us</a>
       </li>
-      <li >
-        <a  href="#">Services</a>
-        <ul>
-          <li>Foundations</li>
-          <li>Driveways</li>
-          <li>Footings</li>
+      <li class="nav-item">
+        <a  href="#">Services<span class="material-symbols-outlined">expand_more</span></i></a>
+        <ul class="submenu">
+          <li><a  href="#">Foundations</a></li>
+          <li><a  href="#">Driveways</a></li>
+          <li><a  href="#">Footings</a></li>
         </ul>
       </li>
-      <li >
+      <li class="nav-item">
         <a href="#">Sevice area</a>
       </li>
-      <li >
-        <a href="#">Contact us</a>
-        <ul>
-          <li>Call Us:(501)240-2490</li>
-          <li>Email:centenopjuan@gmail.com</li>
+      <li  class="nav-item">
+        <a href="#">Contact us<span class="material-symbols-outlined">expand_more</span></a>
+        <ul class="submenu">
+          <li><a  href="#">Call Us: (501) 240 - 2490</a></li>
+          <li><a  href="#">Email Address: centenopjuan@gmail.com</a></li>
         </ul>
       </li>
-      <li class="toggle"><a href="#"><i class="fas fa-bars"><img src="img/hamburger.png"></i></a></li>
+      <li class="toggle"><a href="#"><span class="material-symbols-outlined">menu</span></a></li>
     </ul>
   </nav>
+
+
   <div id="main-picture">
     <img id="logo" src="img/image2vector.svg">
   </div>
@@ -213,6 +226,7 @@
 
   <script src="js/vendor/modernizr-3.12.0.min.js"></script>
   <script src="js/app.js"></script>
+  
 
 </body>
 
