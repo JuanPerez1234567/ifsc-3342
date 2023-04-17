@@ -5,11 +5,7 @@ body{
     background-color: rgba(48, 48, 250, 0.871);
     font-family: 'Oswald', sans-serif;
 }
-ul{
-    list-style-type: none;
-    margin:0;
-    padding:0;
-}
+
 .estimate-button{
     order:0;
     margin: 10px;
@@ -22,6 +18,11 @@ ul{
 
 }
 nav{
+    ul{
+        list-style-type: none;
+        margin:0;
+        padding:0;
+    }
     background:white;
     position: fixed;
     z-index: 1;
@@ -41,6 +42,7 @@ nav{
             text-decoration: none;
 
         }
+        
 
     
         .estimate-button{
@@ -65,7 +67,7 @@ nav{
 
         .nav-item{
             order:2;
-            margin:10px;
+            margin:5px;
             padding:10px;
             width:100%;
             text-align: center;
@@ -87,8 +89,8 @@ nav{
                 
                 li {
                     display: block;
-                    margin: 10px;
-                    padding: 10px;
+                    margin: 5px;
+                    padding: 5px;
                     width:100%;
                     text-align: center;
                 }
@@ -99,6 +101,12 @@ nav{
         
         
     }
+}
+.primary-nav.active .nav-item{
+    display: block;
+  }
+  .primary-nav.active .nav-item.submenu-active .submenu{
+    display:block;
 }
 
 #main-picture{
@@ -127,11 +135,95 @@ nav{
     }
 
 }
-.primary-nav.active .nav-item{
-    display: block;
-  }
-  .primary-nav.active .nav-item.submenu-active .submenu{
-    display:block;
+section{
+    width:90%;
+    margin:auto;
+    margin-top: 20px;
+    padding: 10px;
+    background: white;
+    border:4px black solid;
+}
+h1{
+    color:red;
+    text-shadow: 1px 1px black;
+    border-bottom:1px black solid;
+}
+.jumbotron{
+    background: white;
+    border:4px black solid;
+    width: 80%;
+    padding: 10px;
+    margin:auto;
+    margin-top: 20px;
+    
+    h1{
+        width:90%;
+        margin: auto;
+        padding: 10px;
+        font-size: 40px;
+        color:red;
+        text-shadow: 1px 1px black;
+        border-bottom:1px black solid;
+        text-align: center;
+
+    }
+    ul{
+        font-size: 20px;
+    }
+    p {
+        font-size: 20px;
+        text-align: center;
+        .free{
+            font-weight: bold;
+            color:red;
+        }
+    }
+    button{
+        width: 100%;
+        margin:auto;
+    }
+
+}
+.about-us{
+    
+    .story{
+        width:80%;
+        margin: auto;
+        margin-bottom: 10px;
+        border-bottom: 2px black solid;
+        padding: 5px;
+        font-size:20px;
+
+        
+    }
+    
+    .quote{
+        width: 70%;
+        margin:auto;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+    }
+    h2{
+        width: 100%;
+        margin:auto;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: bold;
+        color:red;
+        text-shadow: 1px 1px black;
+        
+        
+    }
+    picture{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin:auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
 }
 
 
