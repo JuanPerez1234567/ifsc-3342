@@ -93,7 +93,7 @@ nav .primary-nav .nav-item .submenu li {
   width: 90%;
   margin: auto;
   height: 400px;
-  background-image: url("../img/foundation.3/foundation.land.400.3.jpg");
+  background-image: url("../img/foundation/foundation.3/foundation.land.400.3.jpg");
   background-size: cover;
   display: flex;
   justify-content: flex-end;
@@ -222,13 +222,12 @@ h1 {
 .services .tabcontent .mySlides1, .services .tabcontent .mySlides2, .services .tabcontent .mySlides3 {
   display: none;
 }
-.services .tabcontent img, .services .tabcontent video {
+.services .tabcontent picture img, .services .tabcontent video img {
   border: 2px black solid;
-  vertical-align: middle;
+  width: 100%;
 }
 .services .tabcontent video {
   width: 100%;
-  max-height: 400px;
 }
 .services .tabcontent .slideshow-container {
   max-width: 1000px;
