@@ -88,3 +88,6 @@ for (let item of items) {
     }
     x[slideIndex[no]-1].style.display = "block";  
   }
+
+  // Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
