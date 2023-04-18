@@ -146,7 +146,8 @@ nav{
     justify-content: flex-end;
     align-items: flex-end;
     img{
-        width: 50%;
+        display: block;
+        width: 40%;
         box-shadow: 6px 5px  black;
         position: relative;
         top: 10px;
@@ -156,6 +157,8 @@ nav{
     }
 
 }
+
+
 section{
     width:90%;
     margin:auto;
@@ -286,9 +289,7 @@ h1{
         .mySlides1, .mySlides2, .mySlides3{
             display: none;
         }
-        picture , video{
-            
-            
+        picture{
             img{
                 border:2px black  solid;
                 width:100%;
@@ -296,8 +297,8 @@ h1{
         }
         video{
             width:100%;
-            
-            
+            margin: auto;
+            border:2px black  solid;
         }
 
         
@@ -375,6 +376,11 @@ h1{
         columns: 2;
         -webkit-columns: 2;
         -moz-columns: 2;
+        margin: auto;
+        column-gap: 50px;
+        li{
+    
+        }
         #AndMore{
             color:red;
         }
@@ -400,7 +406,8 @@ h1{
         margin:auto;
         padding:10px;
         text-align: center;
-        border:1px black solid;
+        border-top:1px black solid;
+        border-bottom:1px black solid;
 
     }
     h2{
@@ -465,7 +472,147 @@ footer{
 
 }
 
-@media screen and (min-width:1000px){
+
+@media screen and (min-width:750px){
+    body{
+        color:red;
+    }
+    
+
+
+    #main-picture{
+        background-image: url("../img/foundation/foundation.3/foundation.land.850.3.jpg");
+        height: 400px;
+        #logo{
+            width: 30%;
+        }
+        
+    }
+
+    .jumbotron{
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            li{
+                text-align: center;
+                padding: 10px;
+                border-left: 1px red solid ;
+                border-right: 1px red solid ;
+                
+            }
+            .one{
+                border-left: none;
+
+            }
+            .three{
+                border-right: none;
+            }
+        }
+    }
+
+    #about-us{
+        display: grid;
+        grid-template-columns: 1fr 60%;
+        grid-template-areas:  
+        "h1    h1"
+        "story picture"
+        "quote picture"
+        "h2    picture";
+        gap:1em;
+        h1{
+            grid-area:h1;
+        }
+        .story{
+            grid-area:story;
+            margin: auto;
+            margin-bottom: 5px;
+        }
+        .quote{
+            grid-area:quote;
+            margin:auto;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        
+        }
+        h2{
+            grid-area:h2;
+            margin: auto;
+            margin-top: 0px;
+        }
+        picture{
+            grid-area:picture;
+        }
+    
+    }
+
+    #service-area{
+        display:grid;
+        grid-template-columns: 1fr  60%;
+        grid-template-areas: 
+        "h1 h1"
+        "p h2"
+        "p img"
+        "p  ul";
+        h1{
+            grid-area:h1;
+        }
+        h2{
+            grid-area:h2;
+        }
+        img{
+            grid-area:img;
+        }
+        p{
+            grid-area:p;
+            margin: auto;
+            border-bottom: 2px black solid;
+        }
+        ul{
+            grid-area:ul;
+            margin: auto;
+            padding: 10px;
+        }
+    }
+    footer{
+        ul{
+            width: 60%;
+        }
+        #logo{
+            width: 20%;
+        }
+    }
+
+
+
+
+
+
+
 }
-@media screen and (min-width:768px){
+
+@media screen and (min-width:1000px){
+
+    body{
+        color:blue;
+    }
+
+    #main-picture{
+        background-image: url("../img/foundation/foundation.3/foundation.land.2265.3.jpg");
+        
+        
+        #logo{
+            width:20%;
+            
+        }
+    }
+
+    footer{
+        ul{
+            width: 50%;
+        }
+        #logo{
+            width: 10%;
+        }
+    }
 }

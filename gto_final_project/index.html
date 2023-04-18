@@ -42,9 +42,9 @@
       <li class="nav-item">
         <a  href="#services">Services<span class="material-symbols-outlined">expand_more</span></a>
         <ul class="submenu">
-          <li><a  href="#Foundations">Foundations</a></li>
-          <li><a  href="#Driveways">Driveways</a></li>
-          <li class="lastItem"><a  href="#Footings">Footings</a></li>
+          <li><a  onclick="openService(event, 'Foundations')">Foundations</a></li>
+          <li><a  onclick="openService(event, 'Driveways')">Driveways</a></li>
+          <li class="lastItem"><a onclick="openService(event, 'Footings')">Footings</a></li>
         </ul>
       </li>
       <li class="nav-item">
@@ -57,7 +57,7 @@
           <li  class="lastItem"><a  href="#contact-us">Email Address: centenopjuan@gmail.com</a></li>
         </ul>
       </li>
-      <li class="toggle"><a href="#"><span class="material-symbols-outlined">menu</span></a></li>
+      <li class="toggle"><a><span class="material-symbols-outlined">menu</span></a></li>
     </ul>
   </nav>
 
@@ -69,9 +69,9 @@
   <section class="jumbotron">
     <h1>GET A FREE ESTIMATE TODAY</h1>
     <ul>
-      <li>Need a new driveway?</li>
-      <li>Need to lay a foundation for your new project?</li>
-      <li>Need to revamp your sidewalk?</li>
+      <li class="one">Need a new driveway?</li>
+      <li class="two">Need to lay a foundation for your new project?</li>
+      <li class="three">Need to revamp your sidewalk?</li>
     </ul>
     <p>No matter how big or small the project is, we got you covered. Set up an appointment and get a <span  class="free">FREE</span> estmate today</p>
     <button class="estimate-button">GET ESTIMATE</button>
@@ -89,8 +89,8 @@
     
     
     <picture>
-      <source srcset="assets/img/aboutus/aboutus.jpg" media="(min-width: 75em)">
-      <source srcset="assets/img/aboutus/aboutus.850.jpg" media="(min-width: 40em)">
+      <source srcset="assets/img/aboutus/aboutus.jpg" media="(min-width: 1000px)">
+      <source srcset="assets/img/aboutus/aboutus.850.jpg" media="(min-width: 750px)">
       <img src="assets/img/aboutus/aboutus.square.400.jpg" alt="Owner driving a machine">
     </picture>
     
@@ -115,24 +115,24 @@
         
         <div class="mySlides1 fade">
           <picture>
-            <source srcset="assets/img/foundation/foundation.1/foundation.1.jpg" media="(min-width: 75em)">
-            <source srcset="assets/img/foundation/foundation.1/foundation.1.850.jpg" media="(min-width: 40em)">
+            <source srcset="assets/img/foundation/foundation.1/foundation.1.jpg" media="(min-width: 1000px)">
+            <source srcset="assets/img/foundation/foundation.1/foundation.1.850.jpg" media="(min-width: 750px)">
             <img src="assets/img/foundation/foundation.1/foundation.1.400.jpg" alt="Foundation 1">
           </picture>
         </div>
       
         <div class="mySlides1 fade">
           <picture>
-            <source srcset="assets/img/foundation/foundation.2/foundation.2.jpg" media="(min-width: 75em)">
-            <source srcset="assets/img/foundation/foundation.2/foundation.2.850.jpg" media="(min-width: 40em)">
+            <source srcset="assets/img/foundation/foundation.2/foundation.2.jpg" media="(min-width: 1000px)">
+            <source srcset="assets/img/foundation/foundation.2/foundation.2.850.jpg" media="(min-width: 750px)">
             <img src="assets/img/foundation/foundation.2/foundation.2.400.jpg" alt="Foundation 2">
           </picture>
         </div>
       
         <div class="mySlides1 fade">
           <picture>
-            <source srcset="assets/img/foundation/foundation.3/foundation.land.2265.3.jpg" media="(min-width: 75em)">
-            <source srcset="assets/img/foundation/foundation.3/foundation.land.850.3.jpg" media="(min-width: 40em)">
+            <source srcset="assets/img/foundation/foundation.3/foundation.land.2265.3.jpg" media="(min-width: 1000px)">
+            <source srcset="assets/img/foundation/foundation.3/foundation.land.850.3.jpg" media="(min-width: 750px)">
             <img src="assets/img/foundation/foundation.3/foundation.land.400.3.jpg" alt="Foundation 3">
           </picture>
         </div>
@@ -160,24 +160,24 @@
         
         <div class="mySlides2 fade">
           <picture>
-            <source srcset="assets/img/driveway/driveway.1/driveway.1.land.jpg" media="(min-width: 75em)">
-            <source srcset="assets/img/driveway/driveway.1/driveway.1.land.850.jpg" media="(min-width: 40em)">
+            <source srcset="assets/img/driveway/driveway.1/driveway.1.land.jpg" media="(min-width: 1000px)">
+            <source srcset="assets/img/driveway/driveway.1/driveway.1.land.850.jpg" media="(min-width: 750px)">
             <img src="assets/img/driveway/driveway.1/driveway.1.land.400.jpg" alt="Driveway 1">
           </picture>
         </div>
       
         <div class="mySlides2 fade">
           <picture>
-            <source srcset="assets/img/driveway/driveway.2/driveway.2.land.jpg" media="(min-width: 75em)">
-            <source srcset="assets/img/driveway/driveway.2/driveway.2.land.850.jpg" media="(min-width: 40em)">
+            <source srcset="assets/img/driveway/driveway.2/driveway.2.land.jpg" media="(min-width: 1000px)">
+            <source srcset="assets/img/driveway/driveway.2/driveway.2.land.850.jpg" media="(min-width: 750px)">
             <img src="assets/img/driveway/driveway.2/driveway.2.land.400.jpg" alt="Driveway 2">
           </picture>
         </div>
       
         <div class="mySlides2 fade">
           <picture>
-            <source srcset="assets/img/driveway/driveway.3/driveway.3.land.jpg" media="(min-width: 75em)">
-            <source srcset="assets/img/driveway/driveway.3/driveway.3.land.850.jpg" media="(min-width: 40em)">
+            <source srcset="assets/img/driveway/driveway.3/driveway.3.land.jpg" media="(min-width: 1000px)">
+            <source srcset="assets/img/driveway/driveway.3/driveway.3.land.850.jpg" media="(min-width: 750px)">
             <img src="assets/img/driveway/driveway.3/driveway.3.land.400.jpg" alt="Driveway 3">
           </picture>
         </div>
@@ -197,24 +197,24 @@
         
         <div class="mySlides3 fade">
           <picture>
-            <source srcset="assets/img/footing/footing.1/footing.1.land.jpg" media="(min-width: 75em)">
-            <source srcset="assets/img/footing/footing.1/footing.1.land.850.jpg" media="(min-width: 40em)">
+            <source srcset="assets/img/footing/footing.1/footing.1.land.jpg" media="(min-width: 1000px)">
+            <source srcset="assets/img/footing/footing.1/footing.1.land.850.jpg" media="(min-width: 750px)">
             <img src="assets/img/footing/footing.1/footing.1.land.400.jpg" alt="Footing 1">
           </picture>
         </div>
       
         <div class="mySlides3 fade">
           <picture>
-            <source srcset="assets/img/footing/footing.2/footing.2.land.jpg" media="(min-width: 75em)">
-            <source srcset="assets/img/footing/footing.2/footing.2.land.850.jpg" media="(min-width: 40em)">
+            <source srcset="assets/img/footing/footing.2/footing.2.land.jpg" media="(min-width: 1000px)">
+            <source srcset="assets/img/footing/footing.2/footing.2.land.850.jpg" media="(min-width: 750px)">
             <img src="assets/img/footing/footing.2/footing.2.land.400.jpg" alt="Footing 2">
           </picture>
         </div>
       
         <div class="mySlides3 fade">
           <picture>
-            <source srcset="assets/img/footing/footing.3/footing.3.land.jpg" media="(min-width: 75em)">
-            <source srcset="assets/img/footing/footing.3/footing.3.land.850.jpg" media="(min-width: 40em)">
+            <source srcset="assets/img/footing/footing.3/footing.3.land.jpg" media="(min-width: 1000px)">
+            <source srcset="assets/img/footing/footing.3/footing.3.land.850.jpg" media="(min-width: 750px)">
             <img src="assets/img/footing/footing.3/footing.3.land.400.jpg" alt="Footing 3">
           </picture>
         </div>
@@ -239,7 +239,7 @@
     <h1>Service Area</h1>
     <h2>Arkansas</h2>
     <img  src="assets/img/pngfind.com-arkansas-outline-png-5578095.png"  alt="Outline of Arkansas">
-    <p>GTO Concrete LLC was founded and is currently located in Little Rock, Arkansas. We have done many projects reaching to all four corners of the state(Listed). Set up  your appointment to see if your location is available.</p>
+    <p>GTO Concrete LLC was founded and is currently located in Little Rock, Arkansas. We have done many projects reaching to all four corners of the state (Listed). Set up  your appointment to see if your location is available.</p>
     <ul>
       <li>Fayetteville</li>
       <li>Bentonville</li>
@@ -271,7 +271,7 @@
 
 
   <footer>
-    <img src="assets/img/logo.png" alt="Company Logo">
+    <img id="logo" src="assets/img/logo.png" alt="Company Logo">
     <ul>
       <li><a  href="#">Back to top</a></li>
       <li><a  href="#about-us">About us</a></li>
@@ -281,11 +281,6 @@
     </ul>
 
   </footer>
-
-
-
-
-
 
 
   <script src="assets/js/vendor/modernizr-3.12.0.min.js"></script>

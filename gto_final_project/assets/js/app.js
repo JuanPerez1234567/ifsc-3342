@@ -39,7 +39,7 @@ for (let item of items) {
 
 
 
-  function openService(evt, cityName) {
+  function openService(evt, serviceName) {
     // Declare all variables
     var i, tabcontent, tablinks;
   
@@ -56,7 +56,7 @@ for (let item of items) {
     }
   
     // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(serviceName).style.display = "block";
     evt.currentTarget.className += " active";
   }
 
