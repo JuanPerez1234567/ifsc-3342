@@ -22,7 +22,7 @@
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
@@ -37,24 +37,24 @@
     <ul class="primary-nav">
       <li><button class="estimate-button">GET ESTIMATE</button></li>
       <li class="nav-item">
-        <a href="#">About us</a>
+        <a href="#about-us">About us</a>
       </li>
       <li class="nav-item">
-        <a  href="#">Services<span class="material-symbols-outlined">expand_more</span></i></a>
+        <a  href="#services">Services<span class="material-symbols-outlined">expand_more</span></a>
         <ul class="submenu">
-          <li><a  href="#">Foundations</a></li>
-          <li><a  href="#">Driveways</a></li>
-          <li><a  href="#">Footings</a></li>
+          <li><a  href="#Foundations">Foundations</a></li>
+          <li><a  href="#Driveways">Driveways</a></li>
+          <li class="lastItem"><a  href="#Footings">Footings</a></li>
         </ul>
       </li>
       <li class="nav-item">
-        <a href="#">Sevice area</a>
+        <a href="#service-area">Sevice area</a>
       </li>
       <li  class="nav-item">
-        <a href="#">Contact us<span class="material-symbols-outlined">expand_more</span></a>
+        <a href="#contact-us">Contact us<span class="material-symbols-outlined">expand_more</span></a>
         <ul class="submenu">
-          <li><a  href="#">Call Us: (501) 240 - 2490</a></li>
-          <li><a  href="#">Email Address: centenopjuan@gmail.com</a></li>
+          <li><a  href="#contact-us">Call Us: (501) 240 - 2490</a></li>
+          <li  class="lastItem"><a  href="#contact-us">Email Address: centenopjuan@gmail.com</a></li>
         </ul>
       </li>
       <li class="toggle"><a href="#"><span class="material-symbols-outlined">menu</span></a></li>
@@ -63,8 +63,9 @@
 
 
   <div id="main-picture">
-    <img id="logo" src="assets/img/image2vector.svg">
+    <img id="logo" src="assets/img/image2vector.svg" alt="Company Logo">
   </div>
+
   <section class="jumbotron">
     <h1>GET A FREE ESTIMATE TODAY</h1>
     <ul>
@@ -78,27 +79,27 @@
   </section>
 
   <div class="main">
-  <section class="about-us">
+
+  <section id="about-us">
     <h1>About us</h1>
     <p class="story">Over the last 10 years, GTO Concrete has been building and perfecting its concrete craft. We have become a reliable contact for multiple contracting companies since we have managed to prove ourselves over and over again. GTO Concrete now has numerous employees and all the equipment and machinery to its name. </p>
     
     <p   class="quote">"Starting from nothing, I have managed to build this company to what it is today. Further proving that Mexicans will get it done!"</p>
     <h2>"Si se Puede!"</h2>
     
-    <!--
+    
     <picture>
       <source srcset="assets/img/aboutus/aboutus.jpg" media="(min-width: 75em)">
       <source srcset="assets/img/aboutus/aboutus.850.jpg" media="(min-width: 40em)">
       <img src="assets/img/aboutus/aboutus.square.400.jpg" alt="Owner driving a machine">
     </picture>
-    -->
+    
 
   </section>
   
 
-  <section class="services">
+  <section id="services">
     <h1>Services</h1>
-      <!-- Tab links -->
     <div class="tab">
       <button class="tablinks" onclick="openService(event, 'Foundations')" id="defaultOpen">Foundations</button>
       <button class="tablinks" onclick="openService(event, 'Driveways')">Driveways</button>
@@ -116,7 +117,7 @@
           <picture>
             <source srcset="assets/img/foundation/foundation.1/foundation.1.jpg" media="(min-width: 75em)">
             <source srcset="assets/img/foundation/foundation.1/foundation.1.850.jpg" media="(min-width: 40em)">
-            <img src="assets/img/foundation/foundation.1/foundation.1.400.jpg" alt="Owner driving a machine">
+            <img src="assets/img/foundation/foundation.1/foundation.1.400.jpg" alt="Foundation 1">
           </picture>
         </div>
       
@@ -124,7 +125,7 @@
           <picture>
             <source srcset="assets/img/foundation/foundation.2/foundation.2.jpg" media="(min-width: 75em)">
             <source srcset="assets/img/foundation/foundation.2/foundation.2.850.jpg" media="(min-width: 40em)">
-            <img src="assets/img/foundation/foundation.2/foundation.2.400.jpg" alt="Owner driving a machine">
+            <img src="assets/img/foundation/foundation.2/foundation.2.400.jpg" alt="Foundation 2">
           </picture>
         </div>
       
@@ -132,14 +133,14 @@
           <picture>
             <source srcset="assets/img/foundation/foundation.3/foundation.land.2265.3.jpg" media="(min-width: 75em)">
             <source srcset="assets/img/foundation/foundation.3/foundation.land.850.3.jpg" media="(min-width: 40em)">
-            <img src="assets/img/foundation/foundation.3/foundation.land.400.3.jpg" alt="Owner driving a machine">
+            <img src="assets/img/foundation/foundation.3/foundation.land.400.3.jpg" alt="Foundation 3">
           </picture>
         </div>
         <div class="mySlides1 fade">
           <video  controls="controls" >
-            <source src="assets/video/footing.4.mp4" type="video/mp4" />
-            <source src="assets/video/footing.4.webm" type="video/webm" />
-            <source src="assets/video/footing.4.ogv" type="video/ogg" />
+            <source src="assets/video/footing.4.mp4" type="video/mp4">
+            <source src="assets/video/footing.4.webm" type="video/webm">
+            <source src="assets/video/footing.4.ogv" type="video/ogg">
         </video>
         </div>
         
@@ -161,7 +162,7 @@
           <picture>
             <source srcset="assets/img/driveway/driveway.1/driveway.1.land.jpg" media="(min-width: 75em)">
             <source srcset="assets/img/driveway/driveway.1/driveway.1.land.850.jpg" media="(min-width: 40em)">
-            <img src="assets/img/driveway/driveway.1/driveway.1.land.400.jpg" alt="Driveway">
+            <img src="assets/img/driveway/driveway.1/driveway.1.land.400.jpg" alt="Driveway 1">
           </picture>
         </div>
       
@@ -169,7 +170,7 @@
           <picture>
             <source srcset="assets/img/driveway/driveway.2/driveway.2.land.jpg" media="(min-width: 75em)">
             <source srcset="assets/img/driveway/driveway.2/driveway.2.land.850.jpg" media="(min-width: 40em)">
-            <img src="assets/img/driveway/driveway.2/driveway.2.land.400.jpg" alt="Driveway">
+            <img src="assets/img/driveway/driveway.2/driveway.2.land.400.jpg" alt="Driveway 2">
           </picture>
         </div>
       
@@ -177,7 +178,7 @@
           <picture>
             <source srcset="assets/img/driveway/driveway.3/driveway.3.land.jpg" media="(min-width: 75em)">
             <source srcset="assets/img/driveway/driveway.3/driveway.3.land.850.jpg" media="(min-width: 40em)">
-            <img src="assets/img/driveway/driveway.3/driveway.3.land.400.jpg" alt="Driveway">
+            <img src="assets/img/driveway/driveway.3/driveway.3.land.400.jpg" alt="Driveway 3">
           </picture>
         </div>
       
@@ -214,7 +215,7 @@
           <picture>
             <source srcset="assets/img/footing/footing.3/footing.3.land.jpg" media="(min-width: 75em)">
             <source srcset="assets/img/footing/footing.3/footing.3.land.850.jpg" media="(min-width: 40em)">
-            <img src="assets/img/footing/footing.3/footing.3.land.400.jpg" alt="Footing 2">
+            <img src="assets/img/footing/footing.3/footing.3.land.400.jpg" alt="Footing 3">
           </picture>
         </div>
       
@@ -234,15 +235,26 @@
   </section>
 
 
-
-
-  <section class="service-area">
+  <section id="service-area">
     <h1>Service Area</h1>
-    <img  src="assets/img/pngfind.com-arkansas-outline-png-5578095.png">
-    <p>GTO Concrete LLC was founded and is currently located in Little Rock, Arkansas. We have done many projects reaching to all four corners of the state. Set up  your appointment to see if your location is available.</p>
+    <h2>Arkansas</h2>
+    <img  src="assets/img/pngfind.com-arkansas-outline-png-5578095.png"  alt="Outline of Arkansas">
+    <p>GTO Concrete LLC was founded and is currently located in Little Rock, Arkansas. We have done many projects reaching to all four corners of the state(Listed). Set up  your appointment to see if your location is available.</p>
+    <ul>
+      <li>Fayetteville</li>
+      <li>Bentonville</li>
+      <li>Fort Smith</li>
+      <li>Texarkana</li>
+      <li>Conway</li>
+      <li>Hot Springs</li>
+      <li>Jonesboro</li>
+      <li id="AndMore">And more</li>
+    </ul>
   </section>
 
-  <section class="contact-us">
+
+
+  <section id="contact-us">
     <h1>Contact Us</h1>
     <p>We are always ready and willing to work with you. Give us a call/email and see how we can be of service to you!</p>
     <h2>Contact Information</h2>
@@ -259,17 +271,13 @@
 
 
   <footer>
+    <img src="assets/img/logo.png" alt="Company Logo">
     <ul>
-      <li><img src="assets/img/blackLogo.png"></li>
-      <li>
-        <ul>
-          <li><a  href="#">Back to top</a></li>
-          <li><a  href="#">About us</a></li>
-          <li><a  href="#">Services</a></li>
-          <li><a  href="#">Service Area</a></li>
-          <li><a  href="#">Contact Us</a></li>
-        </ul>
-      </li>
+      <li><a  href="#">Back to top</a></li>
+      <li><a  href="#about-us">About us</a></li>
+      <li><a  href="#services">Services</a></li>
+      <li><a  href="#service-area">Service Area</a></li>
+      <li><a  href="#contact-us">Contact Us</a></li>
     </ul>
 
   </footer>
