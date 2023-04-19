@@ -393,9 +393,6 @@ footer img {
 }
 
 @media screen and (min-width: 750px) {
-  body {
-    color: red;
-  }
   #main-picture {
     background-image: url("../img/foundation/foundation.3/foundation.land.850.3.jpg");
     height: 400px;
@@ -483,11 +480,68 @@ footer img {
   body {
     color: blue;
   }
-  #main-picture {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "main-picture jumbotron";
+    width: 90%;
+    height: 500px;
+    margin: auto;
     background-image: url("../img/foundation/foundation.3/foundation.land.2265.3.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
   }
-  #main-picture #logo {
-    width: 20%;
+  .header #main-picture {
+    grid-area: main-picture;
+    margin: auto;
+    width: 100%;
+    background: none;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  .header #main-picture #logo {
+    margin-left: 20px;
+    position: static;
+    width: 30%;
+  }
+  .header .jumbotron {
+    grid-area: jumbotron;
+    margin: auto;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .header .jumbotron button {
+    display: block;
+    margin: auto;
+    width: 70%;
+  }
+  #about-us {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "h1      h1" "picture story" "h2    quote";
+  }
+  #about-us .quote {
+    margin: auto;
+    padding: 10px;
+    background-color: #ddd;
+    border: 1px black solid;
+  }
+  #about-us .story {
+    margin: 0;
+    margin: auto;
+  }
+  #about-us h2 {
+    margin: 0;
+    margin: auto;
+    font-size: 40px;
+  }
+  #about-us picture img {
+    width: 70%;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    background-color: #ddd;
+    margin-bottom: 0px;
   }
   footer ul {
     width: 50%;

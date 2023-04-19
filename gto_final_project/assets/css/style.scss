@@ -474,9 +474,6 @@ footer{
 
 
 @media screen and (min-width:750px){
-    body{
-        color:red;
-    }
     
 
 
@@ -597,16 +594,96 @@ footer{
         color:blue;
     }
 
-    #main-picture{
+    .header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "main-picture jumbotron";
+        
+        
+        width: 90%;
+        height: 500px;
+        margin:auto;
         background-image: url("../img/foundation/foundation.3/foundation.land.2265.3.jpg");
-        
-        
-        #logo{
-            width:20%;
+        background-size: cover;
+        background-position: 50% 50%;
+
+
+        #main-picture{
+            grid-area:main-picture;
+            margin: auto;
+            width: 100%;
+            background: none;
+            justify-content: flex-start;
+            align-items: flex-end;
+
+            #logo{
+                margin-left:20px;
+                position: static;
+                width:30%;
+            }
+        }
+        .jumbotron{
+            grid-area:jumbotron;
+            margin:auto;
+            width: 90%;
+            margin-bottom: 20px;
+            button{
+                display: block;
+                margin:auto;
+                width: 70%;
             
+            }
+        }
+    
+
+    
+    }
+
+    #about-us{
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "h1      h1"
+        "picture story"
+        "h2    quote" ;
+        
+        .quote{
+            margin: auto;
+            padding: 10px;
+            background-color: #ddd;
+            border: 1px black solid;
+            
+        }
+        .story{
+            margin:0;
+            margin: auto;
+
+        }
+        h2{
+            margin:0;
+            margin: auto;
+            font-size: 40px;
+        }
+
+        picture{
+        
+            img{
+                width: 70%;
+                max-height: fit-content;
+        
+                background-color: #ddd;
+                margin-bottom: 0px;
+            }
         }
     }
 
+
+
+
+
+    
     footer{
         ul{
             width: 50%;
