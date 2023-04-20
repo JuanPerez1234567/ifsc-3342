@@ -604,7 +604,7 @@ footer{
 
 }
 
-@media screen and (min-width:1000px){
+@media screen and (min-width:1200px){
     
 
     nav{
@@ -776,7 +776,7 @@ footer{
         #contact-us{
             grid-area:contact-us;
             width: 70%;
-            grid-template-columns: 50% 1fr;
+            grid-template-columns: 40% 1fr;
             p{
                 width:60%;
                 font-size: 25px;
@@ -791,6 +791,7 @@ footer{
                 "labelPhone labelEmail labelFax"
                 "phone       email       fax";
                 font-size: 20px;
+                
 
                 #labelPhone{
                     grid-area:labelPhone;
