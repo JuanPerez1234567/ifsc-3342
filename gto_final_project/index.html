@@ -30,7 +30,7 @@
   
 </head>
 
-<body >
+<body itemscope itemtype="https://schema.org/LocalBusiness">
 
   <nav>
 
@@ -40,18 +40,18 @@
         <a href="#about-us">About us</a>
       </li>
       <li class="nav-item">
-        <a  href="#services">Services<span class="material-symbols-outlined">expand_more</span></a>
+        <a  >Services<span class="material-symbols-outlined">expand_more</span></a>
         <ul class="submenu">
-          <li><a  onclick="openService(event, 'Foundations')">Foundations</a></li>
-          <li><a  onclick="openService(event, 'Driveways')">Driveways</a></li>
-          <li class="lastItem"><a onclick="openService(event, 'Footings')">Footings</a></li>
+          <li><a  href="#services" onclick="openService(event, 'Foundations')">Foundations</a></li>
+          <li><a  href="#services" onclick="openService(event, 'Driveways')">Driveways</a></li>
+          <li class="lastItem"><a href="#services" onclick="openService(event, 'Footings')">Footings</a></li>
         </ul>
       </li>
       <li class="nav-item">
         <a href="#service-area">Sevice area</a>
       </li>
       <li  class="nav-item">
-        <a href="#contact-us">Contact us<span class="material-symbols-outlined">expand_more</span></a>
+        <a >Contact us<span class="material-symbols-outlined">expand_more</span></a>
         <ul class="submenu">
           <li><a  href="#contact-us">Call Us: (501) 240 - 2490</a></li>
           <li  class="lastItem"><a  href="#contact-us">Email Address: centenopjuan@gmail.com</a></li>
@@ -62,26 +62,25 @@
   </nav>
 
   <div class="header">
-  <div id="main-picture">
-    <img id="logo" src="assets/img/image2vector.svg" alt="Company Logo">
-  </div>
-  <section class="jumbotron">
-    <h1>GET A FREE ESTIMATE TODAY</h1>
-    <ul> 
-      <li class="one">Need a new driveway?</li>
-      <li class="two">Need to lay a foundation for your new project?</li>
-      <li class="three">Need to revamp your sidewalk?</li>
-    </ul>
-    <p>No matter how big or small the project is, we got you covered. Set up an appointment and get a <span  class="free">FREE</span> estmate today</p>
-    <button class="estimate-button">GET ESTIMATE</button>
+    <div id="main-picture">
+      <img id="logo" src="assets/img/image2vector.svg" alt="Company Logo">
+    </div>
+    <section class="jumbotron">
+      <h1>GET A FREE ESTIMATE TODAY</h1>
+      <ul> 
+        <li class="one">Need a new driveway?</li>
+        <li class="two">Need to lay a foundation for your new project?</li>
+        <li class="three">Need to revamp your sidewalk?</li>
+      </ul>
+      <p>No matter how big or small the project is, we got you covered. Set up an appointment and get a <span  class="free">FREE</span> estmate today</p>
+      <button class="estimate-button">GET ESTIMATE</button>
+    </section>
   </div>
 
   
 
-  <div class="main">
+  <div id="main">
  
-      
-  </section>
 
   <section id="about-us">
     <h1>About us</h1>
@@ -240,7 +239,7 @@
 
   <section id="service-area">
     <h1>Service Area</h1>
-    <h2>Arkansas</h2>
+    <h2 itemprop="areaServed">Arkansas</h2>
     <img  src="assets/img/pngfind.com-arkansas-outline-png-5578095.png"  alt="Outline of Arkansas">
     <p>GTO Concrete LLC was founded and is currently located in Little Rock, Arkansas. We have done many projects reaching to all four corners of the state (Listed). Set up  your appointment to see if your location is available.</p>
     <ul>
@@ -262,19 +261,19 @@
     <p>We are always ready and willing to work with you. Give us a call/email and see how we can be of service to you!</p>
     <h2>Contact Information</h2>
     <dl>
-      <dt>Phone Number</dt>
-      <dd>(501)240-2490</dd>
-      <dt>Email Address</dt>
-      <dd>centenopjuan@gmail.com</dd>
-      <dt>Fax Number</dt>
-      <dd>(501)847-2326</dd>
+      <dt id="labelPhone">Phone Number</dt>
+      <dd id="phone" itemprop="telephone">(501)240-2490</dd>
+      <dt id="labelEmail">Email Address</dt>
+      <dd id="email" itemprop="email">centenopjuan@gmail.com</dd>
+      <dt id="labelFax">Fax Number</dt>
+      <dd id="fax" itemprop="faxNumber">(501)847-2326</dd>
     </dl>
   </section>
   </div>
 
 
   <footer>
-    <img id="logo" src="assets/img/logo.png" alt="Company Logo">
+    <img  src="assets/img/blackLogo.png" alt="Company Logo">
     <ul>
       <li><a  href="#">Back to top</a></li>
       <li><a  href="#about-us">About us</a></li>

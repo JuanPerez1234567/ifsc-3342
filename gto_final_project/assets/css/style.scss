@@ -216,7 +216,7 @@ h1{
         width:80%;
         margin: auto;
         margin-bottom: 10px;
-        border-bottom: 2px black solid;
+        border-bottom: 2px red solid;
         padding: 5px;
         font-size:20px;
 
@@ -298,6 +298,7 @@ h1{
         video{
             width:100%;
             margin: auto;
+            background: darkgray;
             border:2px black  solid;
         }
 
@@ -367,7 +368,7 @@ h1{
     p{
         grid-area:p;
         font-size:20px;
-        border-top:1px black solid;
+        border-top:1px red solid;
         padding: 10px;
         text-align: center;
 
@@ -406,8 +407,8 @@ h1{
         margin:auto;
         padding:10px;
         text-align: center;
-        border-top:1px black solid;
-        border-bottom:1px black solid;
+        border-top:1px red solid;
+        border-bottom:1px red solid;
 
     }
     h2{
@@ -542,6 +543,21 @@ footer{
         }
     
     }
+    #services{
+        grid-area:services;
+        .tabcontent{
+            picture{
+                img{
+                    border:2px black  solid;
+                     width:90%;
+                    background: black;
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+
+    }
 
     #service-area{
         display:grid;
@@ -563,7 +579,7 @@ footer{
         p{
             grid-area:p;
             margin: auto;
-            border-bottom: 2px black solid;
+            border-bottom: 2px red solid;
         }
         ul{
             grid-area:ul;
@@ -589,10 +605,56 @@ footer{
 }
 
 @media screen and (min-width:1000px){
+    
 
-    body{
-        color:blue;
+    nav{
+        .primary-nav{
+            justify-content: center;
+            align-items: flex-end;     
+            flex-wrap: nowrap;
+            background: none;
+
+
+            .estimate-button{
+                margin-right:50px;
+    
+            }
+            .nav-item{
+                display: block;
+                order: 1;
+                position: relative;
+                flex-shrink: 1;
+                text-align: center;
+                width: auto;
+                border-top:3px red solid;
+                font-size: 20px;
+    
+            }
+            .submenu-active .submenu{
+                display: block;
+                position:absolute;
+                left:0;
+                top:38px;
+                background: white;
+                padding: 10px;
+                margin: auto;
+                text-align: left;
+            
+    
+            }
+            .toggle{
+                display: none;
+                
+    
+            }
+            .submenu-active{
+                border-radius: 0;
+            }
+        }
+
     }
+    
+
 
     .header{
         display: grid;
@@ -600,14 +662,12 @@ footer{
         grid-template-areas: 
         "main-picture jumbotron";
         
-        
         width: 90%;
         height: 500px;
         margin:auto;
         background-image: url("../img/foundation/foundation.3/foundation.land.2265.3.jpg");
         background-size: cover;
         background-position: 50% 50%;
-
 
         #main-picture{
             grid-area:main-picture;
@@ -636,59 +696,131 @@ footer{
             }
         }
     
-
-    
     }
 
-    #about-us{
-        width: 60%;
-        display: grid;
+    #main{
+        display:grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        "h1      h1"
-        "picture story"
-        "h2    quote" ;
-        
-        .quote{
-            margin: auto;
-            padding: 10px;
-            background-color: #ddd;
-            border: 1px black solid;
+        grid-template-areas: 
+        "about-us about-us"
+        "services   service-area"
+        "contact-us contact-us";
+        #about-us{
+            grid-area:about-us;
+            width: 60%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            "h1      h1"
+            "picture story"
+            "picture    quote" 
+            "picture  h2";
+            gap:1em;
+
+            .quote{
+                margin: 0;
+                margin: auto;
+                padding: 10px;
+                border-bottom: 2px red solid;
+                font-size: 30px;
+            }
+            .story{
+                margin:0;
+                margin: auto;
+                font-size: 25px;
+
+            }
+            h2{
             
-        }
-        .story{
-            margin:0;
-            margin: auto;
+                margin:0;
+                margin: auto;
+                font-size: 40px;
+            }
 
-        }
-        h2{
-            margin:0;
-            margin: auto;
-            font-size: 40px;
-        }
-
-        picture{
+            picture{
         
-            img{
-                width: 70%;
-                max-height: fit-content;
+                img{
+                    width: 70%;
+                    max-height: fit-content;
         
-                background-color: #ddd;
-                margin-bottom: 0px;
+                    background-color: #ddd;
+                    margin-bottom: 0px;
+                }
             }
         }
+        #services{
+            grid-area:services;
+            .tabcontent{
+                picture{
+                    img{
+                        border:2px black  solid;
+                        width:80%;
+                        background: black;
+                        display: block;
+                        margin: auto;
+                    }
+                }
+            }
+
+        }
+        #service-area{
+            grid-area:service-area;
+            
+            p{
+                font-size: 25px;
+            }
+            li{
+                font-size: 20px;
+            }
+        }
+        #contact-us{
+            grid-area:contact-us;
+            width: 70%;
+            grid-template-columns: 50% 1fr;
+            p{
+                width:60%;
+                font-size: 25px;
+            }
+            h2{
+                margin: auto;
+            }
+            dl{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: 
+                "labelPhone labelEmail labelFax"
+                "phone       email       fax";
+                font-size: 20px;
+
+                #labelPhone{
+                    grid-area:labelPhone;
+                }
+                #phone{
+                    grid-area:phone;
+                }
+                #labelEmail{
+                    grid-area:labelEmail;
+                }
+                #email{
+                    grid-area:email;
+                }
+                #labelFax{
+                    grid-area:labelFax;
+                }
+                #fax{
+                    grid-area:fax;
+                }
+            }
+
+
+        }
     }
-
-
-
-
-
     
     footer{
         ul{
             width: 50%;
         }
-        #logo{
+        img{
             width: 10%;
         }
     }

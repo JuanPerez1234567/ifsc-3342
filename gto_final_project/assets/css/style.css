@@ -186,7 +186,7 @@ h1 {
   width: 80%;
   margin: auto;
   margin-bottom: 10px;
-  border-bottom: 2px black solid;
+  border-bottom: 2px red solid;
   padding: 5px;
   font-size: 20px;
 }
@@ -255,6 +255,7 @@ h1 {
 #services .tabcontent video {
   width: 100%;
   margin: auto;
+  background: darkgray;
   border: 2px black solid;
 }
 #services .tabcontent .slideshow-container {
@@ -309,7 +310,7 @@ h1 {
 #service-area p {
   grid-area: p;
   font-size: 20px;
-  border-top: 1px black solid;
+  border-top: 1px red solid;
   padding: 10px;
   text-align: center;
 }
@@ -339,8 +340,8 @@ h1 {
   margin: auto;
   padding: 10px;
   text-align: center;
-  border-top: 1px black solid;
-  border-bottom: 1px black solid;
+  border-top: 1px red solid;
+  border-bottom: 1px red solid;
 }
 #contact-us h2 {
   grid-area: h2;
@@ -445,6 +446,16 @@ footer img {
   #about-us picture {
     grid-area: picture;
   }
+  #services {
+    grid-area: services;
+  }
+  #services .tabcontent picture img {
+    border: 2px black solid;
+    width: 90%;
+    background: black;
+    display: block;
+    margin: auto;
+  }
   #service-area {
     display: grid;
     grid-template-columns: 1fr 60%;
@@ -462,7 +473,7 @@ footer img {
   #service-area p {
     grid-area: p;
     margin: auto;
-    border-bottom: 2px black solid;
+    border-bottom: 2px red solid;
   }
   #service-area ul {
     grid-area: ul;
@@ -477,8 +488,40 @@ footer img {
   }
 }
 @media screen and (min-width: 1000px) {
-  body {
-    color: blue;
+  nav .primary-nav {
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    background: none;
+  }
+  nav .primary-nav .estimate-button {
+    margin-right: 50px;
+  }
+  nav .primary-nav .nav-item {
+    display: block;
+    order: 1;
+    position: relative;
+    flex-shrink: 1;
+    text-align: center;
+    width: auto;
+    border-top: 3px red solid;
+    font-size: 20px;
+  }
+  nav .primary-nav .submenu-active .submenu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 38px;
+    background: white;
+    padding: 10px;
+    margin: auto;
+    text-align: left;
+  }
+  nav .primary-nav .toggle {
+    display: none;
+  }
+  nav .primary-nav .submenu-active {
+    border-radius: 0;
   }
   .header {
     display: grid;
@@ -515,38 +558,102 @@ footer img {
     margin: auto;
     width: 70%;
   }
-  #about-us {
+  #main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "about-us about-us" "services   service-area" "contact-us contact-us";
+  }
+  #main #about-us {
+    grid-area: about-us;
     width: 60%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "h1      h1" "picture story" "h2    quote";
+    grid-template-areas: "h1      h1" "picture story" "picture    quote" "picture  h2";
+    gap: 1em;
   }
-  #about-us .quote {
-    margin: auto;
-    padding: 10px;
-    background-color: #ddd;
-    border: 1px black solid;
-  }
-  #about-us .story {
+  #main #about-us .quote {
     margin: 0;
     margin: auto;
+    padding: 10px;
+    border-bottom: 2px red solid;
+    font-size: 30px;
   }
-  #about-us h2 {
+  #main #about-us .story {
+    margin: 0;
+    margin: auto;
+    font-size: 25px;
+  }
+  #main #about-us h2 {
     margin: 0;
     margin: auto;
     font-size: 40px;
   }
-  #about-us picture img {
+  #main #about-us picture img {
     width: 70%;
     max-height: -moz-fit-content;
     max-height: fit-content;
     background-color: #ddd;
     margin-bottom: 0px;
   }
+  #main #services {
+    grid-area: services;
+  }
+  #main #services .tabcontent picture img {
+    border: 2px black solid;
+    width: 80%;
+    background: black;
+    display: block;
+    margin: auto;
+  }
+  #main #service-area {
+    grid-area: service-area;
+  }
+  #main #service-area p {
+    font-size: 25px;
+  }
+  #main #service-area li {
+    font-size: 20px;
+  }
+  #main #contact-us {
+    grid-area: contact-us;
+    width: 70%;
+    grid-template-columns: 50% 1fr;
+  }
+  #main #contact-us p {
+    width: 60%;
+    font-size: 25px;
+  }
+  #main #contact-us h2 {
+    margin: auto;
+  }
+  #main #contact-us dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "labelPhone labelEmail labelFax" "phone       email       fax";
+    font-size: 20px;
+  }
+  #main #contact-us dl #labelPhone {
+    grid-area: labelPhone;
+  }
+  #main #contact-us dl #phone {
+    grid-area: phone;
+  }
+  #main #contact-us dl #labelEmail {
+    grid-area: labelEmail;
+  }
+  #main #contact-us dl #email {
+    grid-area: email;
+  }
+  #main #contact-us dl #labelFax {
+    grid-area: labelFax;
+  }
+  #main #contact-us dl #fax {
+    grid-area: fax;
+  }
   footer ul {
     width: 50%;
   }
-  footer #logo {
+  footer img {
     width: 10%;
   }
 }/*# sourceMappingURL=style.css.map */
