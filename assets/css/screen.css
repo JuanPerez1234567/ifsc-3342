@@ -37,6 +37,10 @@ body{
   font-size: 70px;
   font-weight: normal;
 
+  margin: auto;
+
+  
+
   /*
   width:43.75%;
   margin-left: 2.08%;
@@ -106,7 +110,7 @@ body{
   }
   h1{
     color:black;
-    margin-bottom: auto;
+    margin: auto;
   }
   
   
@@ -114,13 +118,13 @@ body{
 
 @media screen and (min-width:911px){
   div {
-    grid-template-columns: auto;
+    grid-template-columns: 1fr 1fr;
     max-height: auto;
   }
 
   h1 {
     padding: 5%;
-    height:30%;
+    
     font-size:150px;
 
     background-color:dimgrey;
@@ -129,15 +133,19 @@ body{
 
   ul {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px;
+    gap:20px;
   }
   li {
-    max-width: 40%;
+    width: 70%;
+    margin: auto;
+    padding: 10px;
   }
 
 }
 
-@media screen and (min-height:800px) {
+@media screen and (max-height:800px) {
   div{
     background-color: black;
   }
